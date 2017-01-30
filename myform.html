@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta charset="utf-8" />
+		<title>Pages - Admin Dashboard UI Kit - Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+		<link rel="apple-touch-icon" href="pages/ico/60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+		<link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+		<link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/jquery-nouislider/jquery.nouislider.css">
+		<link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+		<link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css">
+		<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css">
+		<link type="text/css" rel="stylesheet" href="assets/plugins/dropzone/css/dropzone.css">
+	    <link rel="stylesheet" href="assets/css/kendo/kendo.common.min.css" />
+	    <link rel="stylesheet" href="assets/css/kendo/kendo.default.min.css" />
+	    <link rel="stylesheet" href="assets/css/kendo/kendo.default.mobile.min.css" />
+
+		<link href="assets/plugins/codrops-dialogFx/dialog.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="assets/plugins/codrops-dialogFx/dialog-sandra.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="pages/css/widget-market.css" rel="stylesheet" type="text/css" media="screen"/>
+		<!--[if lte IE 9]>
+	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+	</head>
+	<body class="fixed-header dashboard">
+		<!-- BEGIN SIDEBPANEL-->
+		<nav class="page-sidebar" data-pages="sidebar">
+			<!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+			<div class="sidebar-overlay-slide from-top" id="appMenu">
+				<div class="row">
+					<div class="col-xs-6 no-padding">
+						<a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+						</a>
+					</div>
+					<div class="col-xs-6 no-padding">
+						<a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 m-t-20 no-padding">
+						<a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
+						</a>
+					</div>
+					<div class="col-xs-6 m-t-20 no-padding">
+						<a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+			<!-- BEGIN SIDEBAR MENU HEADER-->
+			<div class="sidebar-header">
+				<img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+				<div class="sidebar-header-controls">
+					<button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
+					</button>
+					<button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
+					</button>
+				</div>
+			</div>
+			<!-- END SIDEBAR MENU HEADER-->
+			<!-- START SIDEBAR MENU -->
+			<div class="sidebar-menu">
+				<!-- BEGIN SIDEBAR MENU ITEMS-->
+				<ul class="menu-items">
+					<li class="m-t-30 ">
+						<a href="index.html" class="detailed">
+							<span class="title">Dashboard</span>
+							<span class="details">12 New Updates</span>
+						</a>
+						<span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+					</li>
+					<li class="">
+						<a href="email.html" class="detailed">
+							<span class="title">Email</span>
+							<span class="details">234 New Emails</span>
+						</a>
+						<span class="icon-thumbnail"><i class="pg-mail"></i></span>
+					</li>
+
+					<li class="">
+						<a href="calendar.html" class="detailed">
+							<span class="title">Calendar</span>
+							<span class="details">Main Calendar</span>
+						</a>
+						<span class="icon-thumbnail"><i class="pg-calender"></i></span>
+					</li>
+
+					<li>
+						<a href="myform.html">
+							<span class="title">Forms</span>
+							<!-- <span class=" arrow"></span> -->
+						</a>
+						<span class="icon-thumbnail">M</span>
+						<!-- <a href="javascript:;">
+							<span class="title">Forms</span>
+							<span class=" arrow"></span>
+						</a>
+						<span class="icon-thumbnail"><i class="pg-form"></i></span>
+						<ul class="sub-menu">
+							<li class="">
+								<a href="myform.html">My Forms</a>
+								<span class="icon-thumbnail">F</span>
+							</li>
+							<li class="">
+								<a href="marketplace.html">Marketplace</a>
+								<span class="icon-thumbnail">M</span>
+							</li>
+						</ul> -->
+					</li>
+					<li class="">
+						<a href="user_admin.html" class="detailed">
+							<span class="title" style="width: 200px;">User Administration</span>
+						</a>
+					</li>
+					<li class="">
+						<a href="group_admin.html" class="detailed">
+							<span class="title" style="width: 200px;">Group Administration</span>
+						</a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<!-- END SIDEBAR MENU -->
+		</nav>
+		<!-- END SIDEBAR -->
+		<!-- END SIDEBPANEL-->
+		<!-- START PAGE-CONTAINER -->
+		<div class="page-container">
+			<div class="header ">
+				<!-- START MOBILE CONTROLS -->
+				<!-- LEFT SIDE -->
+				<div class="pull-left full-height visible-sm visible-xs">
+					<!-- START ACTION BAR -->
+					<div class="sm-action-bar">
+						<a href="#" class="btn-link toggle-sidebar" data-toggle="sidebar">
+							<span class="icon-set menu-hambuger"></span>
+						</a>
+					</div>
+					<!-- END ACTION BAR -->
+					<div class="sm-action-bar">
+						<a id="horizontal-menu-toggle" href="#" class="hidden">
+							<span class="icon-set menu-hambuger"></span>
+						</a>
+					</div>
+				</div>
+				<!-- RIGHT SIDE -->
+				<div class="pull-right full-height visible-sm visible-xs">
+					<!-- START ACTION BAR -->
+					<div class="sm-action-bar">
+						<a href="#" class="btn-link" data-toggle="quickview" data-toggle-element="#quickview">
+							<span class="icon-set menu-hambuger-plus"></span>
+						</a>
+					</div>
+					<!-- END ACTION BAR -->
+				</div>
+				<!-- END MOBILE CONTROLS -->
+				<div class="pull-center sm-table">
+					<div class="header-inner">
+						<a href="#" class="toggle-secondary-sidebar">Inbox <span class="text-info">(12)</span> <span class="caret"></span></a>
+						<div class="brand inline">
+							<img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+						</div>
+						<ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
+							<li class="p-r-15 inline">
+								<div class="dropdown">
+									<a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
+										<span class="bubble"></span>
+									</a>
+									<!-- START Notification Dropdown -->
+									<div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
+										<!-- START Notification -->
+										<div class="notification-panel">
+											<!-- START Notification Body-->
+											<div class="notification-body scrollable">
+												<!-- START Notification Item-->
+												<div class="notification-item unread clearfix">
+													<!-- START Notification Item-->
+													<div class="heading open">
+														<a href="#" class="text-complete">
+															<i class="pg-map fs-16 m-r-10"></i>
+															<span class="bold">Carrot Design</span>
+															<span class="fs-12 m-l-10">David Nester</span>
+														</a>
+														<div class="pull-right">
+															<div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
+																<div><i class="fa fa-angle-left"></i>
+																</div>
+															</div>
+															<span class=" time">few sec ago</span>
+														</div>
+														<div class="more-details">
+															<div class="more-details-inner">
+																<h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br> 
+																														distinguishes between <br>
+																														A leader and a follower.”</h5>
+																<p class="small hint-text">
+																	Commented on john Smiths wall.
+																	<br> via pages framework.
+																</p>
+															</div>
+														</div>
+													</div>
+													<!-- END Notification Item-->
+													<!-- START Notification Item Right Side-->
+													<div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+														<a href="#" class="mark"></a>
+													</div>
+													<!-- END Notification Item Right Side-->
+												</div>
+												<!-- START Notification Body-->
+												<!-- START Notification Item-->
+												<div class="notification-item  clearfix">
+													<div class="heading">
+														<a href="#" class="text-danger">
+															<i class="fa fa-exclamation-triangle m-r-10"></i>
+															<span class="bold">98% Server Load</span>
+															<span class="fs-12 m-l-10">Take Action</span>
+														</a>
+														<span class="pull-right time">2 mins ago</span>
+													</div>
+													<!-- START Notification Item Right Side-->
+													<div class="option">
+														<a href="#" class="mark"></a>
+													</div>
+													<!-- END Notification Item Right Side-->
+												</div>
+												<!-- END Notification Item-->
+												<!-- START Notification Item-->
+												<div class="notification-item  clearfix">
+													<div class="heading">
+														<a href="#" class="text-warning-dark">
+															<i class="fa fa-exclamation-triangle m-r-10"></i>
+															<span class="bold">Warning Notification</span>
+															<span class="fs-12 m-l-10">Buy Now</span>
+														</a>
+														<span class="pull-right time">yesterday</span>
+													</div>
+													<!-- START Notification Item Right Side-->
+													<div class="option">
+														<a href="#" class="mark"></a>
+													</div>
+													<!-- END Notification Item Right Side-->
+												</div>
+												<!-- END Notification Item-->
+												<!-- START Notification Item-->
+												<div class="notification-item unread clearfix">
+													<div class="heading">
+														<div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
+															<img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
+														</div>
+														<a href="#" class="text-complete">
+															<span class="bold">Revox Design Labs</span>
+															<span class="fs-12 m-l-10">Owners</span>
+														</a>
+														<span class="pull-right time">11:00pm</span>
+													</div>
+													<!-- START Notification Item Right Side-->
+													<div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+														<a href="#" class="mark"></a>
+													</div>
+													<!-- END Notification Item Right Side-->
+												</div>
+												<!-- END Notification Item-->
+											</div>
+											<!-- END Notification Body-->
+											<!-- START Notification Footer-->
+											<div class="notification-footer text-center">
+												<a href="#" class="">Read all notifications</a>
+												<a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
+													<i class="pg-refresh_new"></i>
+												</a>
+											</div>
+											<!-- START Notification Footer-->
+										</div>
+										<!-- END Notification -->
+									</div>
+									<!-- END Notification Dropdown -->
+								</div>
+							</li>
+							<li class="p-r-20 inline">
+								<a href="#" id="mark-email" class="mark-email text-info m-l-20"><i class="fa fa-pencil fs-16"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class=" pull-right">
+					<div class="header-inner">
+						<a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a>
+					</div>
+				</div>
+				<div class=" pull-right">
+					<!-- START User Info-->
+					<div class="visible-lg visible-md m-t-10">
+						<div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+							<span class="semi-bold">David</span> <span class="text-master">Nest</span>
+						</div>
+						<div class="dropdown pull-right">
+							<button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="thumbnail-wrapper d32 circular inline m-t-5">
+								<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+						</span>
+							</button>
+							<ul class="dropdown-menu profile-dropdown" role="menu">
+								<li><a href="#"><i class="pg-settings_small"></i> Settings</a>
+								</li>
+								<li><a href="#"><i class="pg-outdent"></i> Feedback</a>
+								</li>
+								<li><a href="#"><i class="pg-signals"></i> Help</a>
+								</li>
+								<li class="bg-master-lighter">
+									<a href="#" class="clearfix">
+										<span class="pull-left">Logout</span>
+										<span class="pull-right"><i class="pg-power"></i></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- END User Info-->
+				</div>
+			</div>
+			<div id="form_list" class="page-content-wrapper">
+				<div class="content bg-white">
+					<nav class="navbar navbar-default bg-white no-border sm-padding-10" role="navigation">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-nav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+									 
+							<div class="collapse navbar-collapse" id="sub-nav">
+								<div class="row">
+									<div class="col-sm-10">
+										<ul class="nav navbar-nav" data-filters="widgets">
+											<li id="tab_myform"><a href="#" class="all-caps font-montserrat fs-11" data-filter="category-MyForm">MyForm</a></li>
+											<li><a href="#" class="all-caps font-montserrat fs-11" data-filter="all">All</a></li>
+											<li id="tab_mine"><a href="#" class="all-caps font-montserrat fs-11" data-filter="category-MINE">MINE</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-2">
+										<ul class="nav navbar-nav navbar-right">
+											<li id="btn_suggest_widget"><a href="#" class="btn btn-default btn-sm padding-5 m-t-15">Suggest a widget</a></li>
+											<li id="btn_new_form"><a href="#" class="btn btn-success btn-sm padding-5 m-t-15">Create New Form</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+					<!-- <div id="myform_list">
+					</div> -->
+
+					<div id="form_templates" class="container-fluid sm-p-l-20 sm-p-r-20">
+						<div class="widgets-container"></div>
+					</div>
+
+					<div id="widgetDetails" class="dialog item-details">
+						<div class="dialog__overlay">
+							<div class="progress-circle-indeterminate"></div>
+						</div>
+						<div class="dialog__content full-height">
+							<button class="close action top-right" data-dialog-close><i class="pg-close"></i></button>
+							<div class="container-fluid full-height">
+								<div class="row dialog__overview full-height">
+									<div class="col-sm-12 no-padding item-slideshow-wrapper full-height">
+										<div class="item-slideshow full-height">
+											<iframe id="widget-preview" class="no-border" style="height:100%"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-description p-t-20 p-b-20">
+							<div class="container">
+								<div class="col-sm-4">
+									<h4 class="no-margin light" id="widget-title"></h4>
+								</div>
+								<div class="col-sm-3">
+									<p class="fs-13" id="widget-description"></p>
+								</div>
+								<div class="col-sm-2">
+									<div class=""><span class="hint-text fs-12">Added on:</span></div>
+									<div class=""><span id="widget-date"></span></div>
+								</div>
+								<div class="col-sm-3">
+									<div id="widget-tags"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div id="form_builder">
+				<div id="form_header">
+					<ul class="nav nav-tabs nav-tabs-simple" role="tablist" data-init-reponsive-tabs="collapse">
+						<li class="active"><a href="myform.html?mode=build" >Build</a></li>
+						<!-- <li><a href="design.html">Design</a></li> -->
+						<li><a href="configure.html">Configure</a></li>
+						<!-- <li><a href="analyse.html">Analyze</a></li> -->
+						<li><a href="permissions.html">Permissions</a></li>
+						<li><a href="changelog.html">Change Log</a></li>
+						<li id="preview_button"><a href="preview.html">Preview</a></li>
+					</ul>
+					<!--<button class="pull-right btn-success btn-cons" aria-hidden="true" id="preview_button">Preview
+						 <i class="fa fa-print" aria-hidden="true"></i>
+						<span>Preview</span>
+					</button> -->
+				</div>
+				<div id="form_body">
+					<div id="form_left">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+											Actions
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body" style="padding: 0px;">
+										<ul id="element_list">
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Button
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												CheckBox
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Switches
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Radio Buttons
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Select
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Slider
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											WIDGETS
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body" style="padding: 0px;">
+										<ul id="element_list">
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												TextBox
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Phone Number
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Date Input
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Time Picker
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Date Picker
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Date Range
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												TextArea
+											</li>
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												Image
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											ADVANCED WIDGETS
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+									<div class="panel-body" style="padding: 0px;">
+										<ul id="element_list">
+											<li class="draggable-item">
+												<div class="col-xs-2 text-center">
+													<i class="fs-14 fa fa-bars"></i>
+												</div>
+												CKEditor
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="form_right">
+						<section class="actions_drop" id="first_drop_area">
+							<dl class="sortable" row="1" col="1">
+								<dd><section class="drop_area disabled"><div class="border"><p class="placeholder">Drag & Drop Here</p></div></section></dd>
+								<div class='clear_both'></div>
+							</dl>
+							<div class='clear_both'></div>
+						</section>
+						<ul class="nav nav-tabs nav-tabs-linetriangle" data-init-reponsive-tabs="dropdownfx" id="form_tab">
+<!-- 							<li class="active">
+								<a data-toggle="tab" href="#tab0"><span>Tab1</span></a>
+								<input type="text" placeholder="" class="form-control">
+								<i class="fs-14 pg-close"></i>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#tab1"><span>Tab2</span></a>
+								<input type="text" placeholder="" class="form-control">
+								<i class="fs-14 pg-close"></i>
+							</li> -->
+							<li>
+								<a data-toggle="new_tab" href="#messages" id="btn_new_tab"><span>New Tab +</span></a>
+							</li>
+						</ul>
+						
+						<div class="col-xs-2 text-center" id="btn_rows_cols">
+							<div id="mini-popup">
+								<table>
+									<tr>
+										<td>Rows:</td>
+										<td><input type="number" id="txt_rows" value="3" min="1"></td>
+									</tr>
+									<tr>
+										<td>Cols:</td>
+										<td><input type="number" id="txt_cols" value="2" min="1"></td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input type="button" value="Close" id="btn_change_tbl">
+										</td>
+									</tr>
+								</table>
+							</div>
+							<i class="fs-14 fa fa-th" id="change_tbl"></i>
+						</div>
+
+						<div class="tab-content" id="form_tabview">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END PAGE CONTAINER -->
+
+		<!-- Dialogs -->
+<!-- 		<div id="component_toolbar">
+			<i class="fs-14 fa fa-cube" id="go_logic"></i>
+			<i class="fs-14 fa fa-folder-o" id="duplicate"></i>
+			<i class="fs-14 pg-plus" id="move"></i>
+			<i class="fs-14 pg-bag" id="delete"></i>
+		</div> -->
+		<div class="modal fade fill-in in" id="dlg_property" tabindex="-1" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				<i class="pg-close"></i>
+			</button>
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-header">
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="dialog_contents">
+								<div class="dialog_title">
+									<i class="fs-14 fa fa-cube" id="go_logic"></i>
+									<span class="title">PROPERTIES</span>
+								</div>
+								<div class="dialog_body">
+									<ul class="nav nav-tabs nav-tabs-linetriangle" data-init-reponsive-tabs="dropdownfx">
+										<li class="active">
+											<a data-toggle="tab" href="#property_dlg_tab1"><span>Colors</span></a>
+										</li>
+										<li>
+											<a data-toggle="tab" href="#property_dlg_tab2"><span>Fonts</span></a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane slide active" id="property_dlg_tab1">
+											<h5>Select a palette or create your own</h5>
+											<div class="prop_color_select">
+												<div class="prop_color_section">
+													<p>Component</p>
+													<div class="prop_color" id="changecolor_comp">
+														<div class="prop_colorpicker"></div>
+													</div>
+													<div class="prop_color" id="changecolor_comp">
+														<div class="prop_colorpallete"></div>
+													</div>
+													<div class="clear_both"></div>
+												</div>
+												<div class="prop_color_section">
+													<p>Description</p>
+													<div class="prop_color" id="changecolor_desc">
+														<div class="prop_colorpicker"></div>
+													</div>
+													<div class="prop_color" id="changecolor_desc">
+														<div class="prop_colorpallete"></div>
+													</div>
+													<div class="clear_both"></div>
+												</div>
+												<div class="prop_color_section" style="display:none;">
+													<p>Background</p>
+													<div class="prop_color" id="changecolor_bg">
+														<div class="prop_colorpicker"></div>
+													</div>
+													<div class="prop_color" id="changecolor_bg">
+														<div class="prop_colorpallete"></div>
+													</div>
+													<div class="clear_both"></div>
+												</div>
+											</div>
+											<div>
+												<p>Preview</p>
+												<div class="prop_preview">
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane slide" id="property_dlg_tab2">
+											<h5>Pick a webfont from the library</h5>
+											<div id="font_list">
+												<ul>
+													<li>
+														<div class="content">Acme</div>
+														<input type="hidden" name="font-family" value="'Acme', 'Helvetica Neue', sans serif">
+													</li>
+													<li>
+														<div class="content">Arial</div>
+														<input type="hidden" name="font-family" value="Arial, sans serif">
+													</li>
+													<li>
+														<div class="content">Arvo</div>
+														<input type="hidden" name="font-family" value="font-family:Arvo,Georgia,serif">
+													</li>
+													<li>
+														<div class="content">Bangers</div>
+														<input type="hidden" name="font-family" value="font-family:'Bangers','Helvetica Neue',sans serif">
+													</li>
+													<li>
+														<div class="content">Cabin</div>
+														<input type="hidden" name="font-family" value="Cabin,'Helvetica Neue',Helvetica,Arial,sans-serif">
+													</li>
+													<li>
+														<div class="content">Courier</div>
+														<input type="hidden" name="font-family" value="Courier, monospace">
+													</li>
+													<li>
+														<div class="content">Crete Round</div>
+														<input type="hidden" name="font-family" value="'Crete Round','Helvetica Neue',sans serif">
+													</li>
+													<li>
+														<div class="content">Dancing Script</div>
+														<input type="hidden" name="font-family" value="'Dancing Script','Comic sans'">
+													</li>
+													<li>
+														<div class="content">Exo</div>
+														<input type="hidden" name="font-family" value='"Exo 2", "Helvetica Neue", cursive'>
+													</li>
+													<li>
+														<div class="content">Georgia</div>
+														<input type="hidden" name="font-family" value="Georgia,serif">
+													</li>
+													<li>
+														<div class="content">Handlee</div>
+														<input type="hidden" name="font-family" value='"Handlee","Helvetica Neue",sans serif'>
+													</li>
+													<li>
+														<div class="content"></div>
+														<input type="hidden" name="font-family" value='Helvetica Neue,Helvetica,arial,sans-serif'>
+													</li>
+													<li>
+														<div class="content">Karla</div>
+														<input type="hidden" name="font-family" value='"Karla", "Helvetica Neue", sans serif'>
+													</li>
+													<li>
+														<div class="content">Lato</div>
+														<input type="hidden" name="font-family" value='"Lato","Helvetica Neue",Helvetica,Arial,sans-serif'>
+													</li>
+													<li>
+														<div class="content">Lekton</div>
+														<input type="hidden" name="font-family" value='Lekton,Georgia,serif'>
+													</li>
+													<li>
+														<div class="content">Lobster</div>
+														<input type="hidden" name="font-family" value='"Lobster Two","Helvetica Neue",sans serif'>
+													</li>
+													<li>
+														<div class="content">Lora</div>
+														<input type="hidden" name="font-family" value='Lora,Georgia,serif'>
+													</li>
+													<li>
+														<div class="content">McLaren</div>
+														<input type="hidden" name="font-family" value='"McLaren", "Helvetica Neue", sans serif'>
+													</li>
+													<li>
+														<div class="content">Montserrat</div>
+														<input type="hidden" name="font-family" value='"Montserrat", "Helvetica Neue", sans serif'>
+													</li>
+													<li>
+														<div class="content">Nixie</div>
+														<input type="hidden" name="font-family" value='"Nixie One", "Helvetica Neue", cursive'>
+													</li>
+													<li>
+														<div class="content">Old Standard TT</div>
+														<input type="hidden" name="font-family" value='"Old Standard TT","Helvetica Neue",sans serif'>
+													</li>
+													<li>
+														<div class="content">Open Sans</div>
+														<input type="hidden" name="font-family" value='"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif'>
+													</li>
+													<li>
+														<div class="content">Oswald</div>
+														<input type="hidden" name="font-family" value='"Oswald","Helvetica Neue",sans serif"'>
+													</li>
+													<li>
+														<div class="content">Playfair</div>
+														<input type="hidden" name="font-family" value='"Playfair Display","Helvetica Neue",sans serif'>
+													</li>
+													<li>
+														<div class="content">Quicksand</div>
+														<input type="hidden" name="font-family" value='"Quicksand", "Helvetica Neue", sans serif'>
+													</li>
+													<li>
+														<div class="content">Raleway</div>
+														<input type="hidden" name="font-family" value='"Raleway", "Helvetica Neue", sans serif'>
+													</li>
+													<li>
+														<div class="content">Sniglet</div>
+														<input type="hidden" name="font-family" value='"Sniglet", "Helvetica Neue", cursive'>
+													</li>
+													<li>
+														<div class="content">Source Sans Pro</div>
+														<input type="hidden" name="font-family" value='"Source Sans Pro",sans-serif'>
+													</li>
+													<li>
+														<div class="content">Vollkorn</div>
+														<input type="hidden" name="font-family" value='Vollkorn, Georgia, serif'>
+													</li>
+												</ul>
+											</div>
+											<div>
+												<p>Preview</p>
+												<div class="prop_preview">
+												</div>
+											</div>
+											<!-- <form class="" role="form">
+												<div class="form-group form-group-default required ">
+													<label>Project</label>
+													<input type="email" class="form-control" required="">
+												</div>
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="form-group form-group-default required">
+															<label>First name</label>
+															<input type="text" class="form-control" required="">
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="form-group form-group-default">
+															<label>Last name</label>
+															<input type="text" class="form-control">
+														</div>
+													</div>
+												</div>
+												<div class="form-group form-group-default required">
+													<label>Password</label>
+													<input type="password" class="form-control" required="">
+												</div>
+												<div class="form-group  form-group-default required">
+													<label>Placeholder</label>
+													<input type="email" class="form-control" placeholder="ex: some@example.com" required="">
+												</div>
+											</form> -->
+										</div>
+									</div>
+								</div>
+								<div class="dialog_footer">
+									<div class="contents">
+										<button class="btn btn-default btn-cons" class="close" data-dismiss="modal">Cancel</button>
+										<button class="btn btn-success btn-cons" class="close" data-dismiss="modal" id="prop_dlg_ok">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade slide-down disable-scroll" id="dlg_create_form" tabindex="-1" role="dialog" aria-labelledby="modalSlideUpLabel" aria-hidden="false">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-header clearfix text-left">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="pg-close fs-14"></i>
+						</button>
+						<h5>Create Form</h5>
+					</div>
+					<div class="modal-body">
+						<div class="contents">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-3">
+										<label for="fname" class="control-label pull-right">Title</label>
+									</div>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="txt_form_name" placeholder="Form Title" name="name" required="" aria-required="true">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="dialog_footer">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+								<div class="pull-right">
+									<button class="btn btn-success btn-cons" class="close" data-dismiss="modal" id="prop_dlg_ok">Save</button>
+									<button class="btn btn-default btn-cons" class="close" data-dismiss="modal">Cancel</button>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN VENDOR JS -->
+		<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<!-- <script src="assets/plugins/jquery-simulation/jquery.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-simulation/jquery.simulate.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-simulation/jquery.simulate.drag-n-drop.js" type="text/javascript"></script> -->
+		<script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+		<script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+		<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+		<script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+		<script src="assets/plugins/mapplic/js/hammer.js"></script>
+		<script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+		<script src="assets/plugins/mapplic/js/mapplic.js"></script>
+		<script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+		<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="assets/plugins/jquery-nouislider/jquery.nouislider.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/jquery-nouislider/jquery.liblink.js"></script>
+	    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	    <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+	    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+	    <script src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+	    <script src="assets/plugins/dropzone/dropzone.min.js" type="text/javascript"></script>
+
+ 
+
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/main_ex.js" type="text/javascript"></script>
+		<script src="assets/plugins/kendo.all.min.js"></script>
+
+		<script src="assets/plugins/moment/moment-with-locales.min.js"></script>
+		<script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/plugins/jquery-isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/codrops-dialogFx/dialogFx.js" type="text/javascript"></script>
+		<script src="pages/js/pages.min.js"></script>
+		<script src="assets/js/widgets.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.js" type="text/javascript"></script>
+		<script src="assets/js/demo.js" type="text/javascript"></script>
+
+
+	</body>
+</html>

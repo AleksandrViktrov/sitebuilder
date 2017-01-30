@@ -1,0 +1,62 @@
+
+
+#_BI_group_form
+{
+	display: 			none;
+}
+
+.table .btn-tag
+{
+	font-size: 			10px;
+	margin:				0px !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td
+{
+	padding: 			15px 10px;
+}
+
+.table>tbody>tr>td
+{
+	vertical-align:		middle;
+}
+
+table.dataTable thead th
+{
+	border-bottom: 		1px solid #ccc;
+}
+
+
+.modal-dialog .modal-header
+{
+	background-color: 	#ddd;
+}
+
+.modal-dialog .modal-body
+{
+	padding: 			15px 25px !important;
+}
+
+.modal-dialog .dialog_footer
+{
+	text-align: 		center;
+	background-color: 	#ddd;
+	padding: 			0px 0px;
+}
+
+.modal-dialog .form-group
+{
+	border-bottom: 		none !important;
+	padding-top: 		10px !important;
+    padding-bottom: 	10px !important;
+}
+
+.modal .modal-header
+{
+	padding-top: 		8px !important;
+}
+
+.modal-body .form-group label
+{
+	text-transform: 	none ! important;
+}

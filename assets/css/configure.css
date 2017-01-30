@@ -1,0 +1,100 @@
+
+.main_body
+{
+	background-color: white !important;
+}
+#form_header
+{
+  top         : 60px;
+  width         : 100%;
+  height        : 50px;
+  background-color  : #FFF;
+}
+
+#form_header ul, #form_template ul
+{
+  list-style      : none;
+  margin        : 0px;
+}
+
+#form_header ul li
+{
+  float         : left;
+  color         : #9E9FA1;
+  font-family     : arial;
+  font-size       : 16px;
+  line-height     : 45px;
+  margin-left     : 35px;
+  cursor        : pointer;
+}
+
+#form_header .active
+{
+  color         : white;
+}
+
+
+#design_list 
+{
+/*	list-style 			: none;
+	padding 			: 0px;*/
+}
+
+#design_list li
+{
+	/*background 			: url(../img/icons/DESIGN-arrow.png) no-repeat;*/
+/*	background-position : right 20px center;*/
+	border-bottom 		: 1px solid #ccc;
+	cursor 				: pointer;
+}
+
+#design_list li a
+{
+	padding-left: 90px;
+	font-size: 14px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 50px;
+}
+
+#design_list li span
+{
+	color 				: #aaa;
+	padding-left 		: 50px;
+}
+
+#design_list li img
+{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#configure_body
+{
+	height 				: 100%;
+}
+
+#configure_body section
+{
+	height: 			100%;
+	border-right 		: 1px solid #aaa;
+}
+
+#configure_body .form-group
+{
+	margin: 0px;
+}
+
+._item_zap span
+{
+	position: absolute;
+	top: 23px;
+}
+
+._item_zap button
+{
+    margin: 10px;
+	background: #f35800;
+	color: #f0f0f0;
+}
